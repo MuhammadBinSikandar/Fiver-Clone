@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import './CatCard.scss'
 import { Link } from 'react-router-dom'
 // import Slider from 'infinite-react-carousel'
@@ -13,6 +14,13 @@ const CatCard = ({ item }) => {
       </div>
     </Link>
   );
+};
+CatCard.propTypes = {
+  item: PropTypes.shape({
+    img: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default CatCard;

@@ -32,12 +32,12 @@ function Navbar() {
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
-            <span className="text">GigFinder</span>
+            <span className="text">FlexiHub</span>
           </Link>
           <span className="dot">.</span>
         </div>
         <div className="links">
-          <span>GigFinder Business</span>
+          <span>FlexiHub Business</span>
           <span>Explore</span>
           <span>English</span>
           {!currentUser?.isSeller && <span>Become a Seller</span>}

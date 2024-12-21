@@ -5,7 +5,8 @@ import Featured from '../../components/featured/Featured';
 import TrustedBy from '../../components/trsutedBy/TrustedBy';
 import Slide from '../../components/Slide/Slide';
 import CatCard from '../../components/catCard/CatCard'
-import { cards } from '../../data'
+import { cards, projects } from '../../data'
+import ProjectCard from '../../components/projectCard/ProjectCard';
 
 const Home = () => {
     return (
@@ -84,7 +85,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            
+            <Slide slidesToShow={5} arrowsScroll={5}>
+                {projects.map((project) => (
+                    <ProjectCard card ={project} key={project.id} />
+                ))}
+            </Slide>
         </div>
     );
 };
