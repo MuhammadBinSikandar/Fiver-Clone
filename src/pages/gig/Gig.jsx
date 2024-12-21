@@ -4,7 +4,7 @@ import "./Gig.scss";
 const Gig = () => {
     return (
         <div className = 'Gig'>
-            Add
+            
         </div>
     );
 };
